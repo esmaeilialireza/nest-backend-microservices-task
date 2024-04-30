@@ -1,0 +1,14 @@
+services:
+  rabbitmq:
+    image: rabbitmq
+    ports:
+      - '5672:5672'
+    expose:
+      - 5672
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - '27017:27017'
+    expose:
+      - 27017
